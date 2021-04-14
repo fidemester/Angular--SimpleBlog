@@ -13,7 +13,8 @@ import {FormsModule} from "@angular/forms";
   declarations: [
     AppComponent,
     HeaderComponent,
-    PostDetailComponent,
+    PostDetailComponent, // @todo: --PostModule-ba
+    // @todo: ide jön: Contact, Footer componensts...
 
   ],
     imports: [
