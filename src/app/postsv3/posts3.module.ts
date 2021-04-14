@@ -16,7 +16,7 @@ import {FormsModule} from "@angular/forms";
     PostItemComponent,
     TrucatePipe,
     NotFoundComponent,
-    ContactComponent
+    ContactComponent 
   ],
     imports: [
         CommonModule,
@@ -31,4 +31,4 @@ import {FormsModule} from "@angular/forms";
     PostsService
   ]
 })
-export class Posts3Module { }
+export class Posts3Module { } //@todo: typo in module name: Posts3Module --> PostsModule, mappa nevet is atnevezni
