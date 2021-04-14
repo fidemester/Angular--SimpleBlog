@@ -14,9 +14,9 @@ import {FormsModule} from "@angular/forms";
   declarations: [
     PostsComponent,
     PostItemComponent,
-    TrucatePipe,
-    NotFoundComponent,
-    ContactComponent 
+    TrucatePipe,        //@todo  ebbe a modulba csak a posztokkal kapcoslats elemek kerüljenek! --> AppModule-ba kerüljön
+    NotFoundComponent, //@todo  ebbe a modulba csak a posztokkal kapcoslats komponensek kerüljenek! --> AppModule
+    ContactComponent   //@todo: ebbe a modulba csak a posztokkal kapcoslatos komponensek kerüljenek! ContactComponent --> AppModule
   ],
     imports: [
         CommonModule,
