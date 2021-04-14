@@ -15,8 +15,8 @@ export class PostsService {
 
   constructor(private http:HttpClient) {
   }
-getPosts(limit:number) : Observable< PostsInterface[] >{
-      return this.http.get<PostsInterface[]>(PostsService.API_URL,{ params: new HttpParams({fromString: "_page=1&_limit="+limit}) } );
+getPosts(limit:number) : Observable< PostsInterface[] >{ // @todo: rename to Post or  IPost
+      return this.http.get<PostsInterface[]>(PostsService.API_URL,{ params: new HttpParams({fromString: "_page=1&_limit="+limit}) } ); // fromString kérdéses számomra, müxik így?
 }
 getPost(id:number){
   return this.http.get<PostsInterface[]>(PostsService.API_URL + '/' + id);
