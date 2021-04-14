@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class NotFoundComponent implements OnInit {
 
   constructor() { }
-link="http://www.localhost:4200"
+link="http://www.localhost:4200" // // @todo: ez itt nem szép helyen van, osztaly mezők a constrctor előtt szerepelnejenek
   ngOnInit(): void {
   }
 
