@@ -9,7 +9,7 @@ import {PostsInterface} from "./posts.interface";
 @Injectable({
   providedIn: 'root'
 })
-export class PostsService {
+export class PostsService { //@todo: a service fajl kerüljön a "posts" modul mappába!
 
   static API_URL='http://localhost:3000/posts';
 
