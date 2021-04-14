@@ -1,23 +1,28 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
-import { PostsComponent } from './posts/posts.component';
-import { PostItemComponent } from './post-item/post-item.component';
-import { TrucatePipe } from './trucate.pipe';
+import {Posts3Module} from "./postsv3/posts3.module";
+import {AppRoutingModule} from "./app-routing/app-routing.module";
+import {RouterModule} from "@angular/router";
+import { PostDetailComponent } from './post-detail/post-detail.component';
+import {FormsModule} from "@angular/forms";
+
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    PostsComponent,
-    PostItemComponent,
-    TrucatePipe
+    PostDetailComponent,
+
   ],
-  imports: [
-    BrowserModule
-  ],
+    imports: [
+        BrowserModule,
+        Posts3Module,
+        AppRoutingModule,
+        RouterModule,
+        FormsModule
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })

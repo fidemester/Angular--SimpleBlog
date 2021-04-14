@@ -1,0 +1,19 @@
+.title{
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+:host{
+  display: block;
+  background-color: aliceblue;
+}
+button{
+  display: block;
+  margin-left:60px;
+  padding: 5px 20px
+}
+img{
+position: relative;
+  top: 50%;
+  left: 17%;
+}

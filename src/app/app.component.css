@@ -1,10 +1,1 @@
-article{
-  display: grid;
-  justify-content: center;
-  grid-template-columns:300px 300px 300px;
-  grid-template-rows: repeat(30, 1fr);
-  column-gap: 20px;
-  row-gap: 20px;
-  padding: 20px;
-  border: darkred;
-}
+

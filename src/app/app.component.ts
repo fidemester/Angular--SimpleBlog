@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+
+
 export interface Post{
   body:string,
   userId:number,
@@ -13,7 +15,8 @@ export interface Post{
 })
 export class AppComponent {
   title = 'SimpleBlog';
-  posts:Post[] = [{
+}
+    /*[{
     postImg:'https://i.picsum.photos/id/866/200/300.jpg?hmac=rcadCENKh4rD6MAp6V_ma-AyWv641M4iiOpe1RyFHeI',
     userId: 1,
     id: 1,
@@ -49,3 +52,5 @@ export class AppComponent {
       body: 'quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto',
     }];
 }
+
+     */

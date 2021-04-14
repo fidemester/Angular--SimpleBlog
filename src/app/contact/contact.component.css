@@ -1,0 +1,9 @@
+*{
+  font-size: 30px;
+}
+
+header, main h1{
+  font-size: 60px;
+  padding: 40px;
+  margin-left: 80px;
+}
