@@ -28,3 +28,5 @@ const routes=[
 })
 export class AppRoutingModule {
 }
+
+//@todo: ez a module fajl egy szinten legyen az app.module.ts-sel, ne legyen külön mappában
