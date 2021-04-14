@@ -5,6 +5,7 @@ import {Observable} from "rxjs";
 import {map} from "rxjs/operators"; // @todo: if not used --> delete line
 import {Post} from "../app.component";
 
+ // @todo: PostDetailComponent mappástó a post module-be szervezd át, post mappába kerüljön
 
 @Component({
   selector: 'app-post-detail',
