@@ -7,6 +7,10 @@ import {AppRoutingModule} from "./app-routing/app-routing.module";
 import {RouterModule} from "@angular/router";
 import { PostDetailComponent } from './post-detail/post-detail.component';
 import {FormsModule} from "@angular/forms";
+import {FooterComponent} from "./features/footer/footer.component";
+import {CommentModule} from "./comment/comment.module";
+import {MatCardModule} from '@angular/material/card';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 
 @NgModule({
@@ -14,15 +18,20 @@ import {FormsModule} from "@angular/forms";
     AppComponent,
     HeaderComponent,
     PostDetailComponent,
+    FooterComponent,
+
 
   ],
-    imports: [
-        BrowserModule,
-        Posts3Module,
-        AppRoutingModule,
-        RouterModule,
-        FormsModule
-    ],
+  imports: [
+    BrowserModule,
+    Posts3Module,
+    AppRoutingModule,
+    RouterModule,
+    FormsModule,
+    CommentModule,
+    MatCardModule,
+    BrowserAnimationsModule
+  ],
   providers: [],
   bootstrap: [AppComponent]
 })
