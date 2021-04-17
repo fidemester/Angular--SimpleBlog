@@ -1,0 +1,5 @@
+<h1 style="color:crimson;padding:0 20px;">Comments</h1>
+<hr style="width:70%;text-align:left;margin-left:10px; border-color:crimson;border-width:1px">
+<div style="padding: 20px 40px" *ngFor="let comment of comments">
+  <app-comment-item [item]="comment"></app-comment-item>
+</div>
