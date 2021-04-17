@@ -1,0 +1,32 @@
+<header>
+  Contact Us
+</header>
+
+<main>
+  <h1>We are keen to hear from you!</h1>
+
+<form #contactForm="ngForm" (submit)="onSubmit(contactForm)" name="contactForm">
+
+  <label for="nameField">Name:</label>
+  <input type="text"
+         name="nameField" id="nameField" ngModel required placeholder="Type your name please!"><br><br>
+
+
+  <label for="emailField">Email:</label>
+  <input type="text" name="emailField" id="emailField" ngModel required placeholder="Type your email address!"><br><br>
+
+<div style="display: flex; align-items: center">
+  <label for="messageField">Message:</label>
+  <textarea name="messageField" id="messageField" cols="20" rows="5" minlength="10" ngModel required placeholder="Type your message!">
+  </textarea>
+</div>
+  <br><br>
+  <div style="padding: 20px">
+    <input type="checkbox" id="term" name="checkbox" [ngModel]="false" required>
+    <label for="term">I read and accept  the Terms & Conditions</label><br>
+  </div>
+
+
+  <button type="submit" name="submit" [disabled]="contactForm.invalid">Send</button>
+</form>
+</main>

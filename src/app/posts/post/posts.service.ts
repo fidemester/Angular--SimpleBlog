@@ -1,10 +1,10 @@
 import {Injectable, Input, OnInit} from '@angular/core';
-import{AppComponent} from "./app.component";
-import {PostsComponent} from "./postsv3/posts/posts.component";
-import {Post} from "./app.component";
+import{AppComponent} from "../../app.component";
+import {PostsComponent} from "./posts.component";
+import {Post} from "../../app.component";
 import {HttpClient, HttpErrorResponse, HttpEvent, HttpParams} from "@angular/common/http";
 import {Observable, throwError} from "rxjs";
-import {PostsInterface} from "./posts.interface";
+import {IPost} from "./IPost";
 
 @Injectable({
   providedIn: 'root'
@@ -15,11 +15,11 @@ export class PostsService {
 
   constructor(private http:HttpClient) {
   }
-getPosts(limit:number) : Observable< PostsInterface[] >{
-      return this.http.get<PostsInterface[]>(PostsService.API_URL,{ params: new HttpParams({fromString: "_page=1&_limit="+limit}) } );
+getPosts(limit:number) : Observable< IPost[] >{
+      return this.http.get<IPost[]>(PostsService.API_URL,{ params: new HttpParams({fromString: "_page=1&_limit="+limit}) } );
 }
 getPost(id:number){
-  return this.http.get<PostsInterface[]>(PostsService.API_URL + '/' + id);
+  return this.http.get<IPost[]>(PostsService.API_URL + '/' + id);
 }
 
 

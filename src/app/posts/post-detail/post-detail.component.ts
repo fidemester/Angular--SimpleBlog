@@ -1,9 +1,10 @@
 import { Component, OnInit } from '@angular/core';
-import {PostsService} from "../posts.service";
+import {PostsService} from "../post/posts.service";
 import {ActivatedRoute} from "@angular/router";
 import {Observable} from "rxjs";
 import {map} from "rxjs/operators";
-import {Post} from "../app.component";
+import {IPost} from "../post/IPost";
+import {Post} from "../../app.component";
 
 
 @Component({
@@ -20,18 +21,18 @@ export class PostDetailComponent implements OnInit {
   }
 
 
-  post: any = [];
-  params:any;
+  post: any= [];
+  postId:any;
   ngOnInit(): void {
 
     this.route.params.subscribe(params => {
       console.log("params", params);
-      this.params = params.id;
+      this.postId = params.id;
     })
 
-    this.PostService.getPost(this.params).subscribe(post => {
+    this.PostService.getPost(this.postId).subscribe(post => {
       console.log("post detail:", post)
-      console.log(this.params)
+      console.log(this.postId)
       this.post = post;
     })
 
