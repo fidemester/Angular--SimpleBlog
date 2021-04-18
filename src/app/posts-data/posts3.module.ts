@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import {PostsComponent} from "./posts/posts.component";
 import {PostItemComponent} from "./post-item/post-item.component";
 import {TrucatePipe} from "../trucate.pipe";
-import {PostsService} from "../posts.service";
+import {PostsService} from "./posts.service";
 import {HttpClientModule} from "@angular/common/http";
 import {NotFoundComponent} from "../not-found/not-found.component";
 import {RouterModule} from "@angular/router";

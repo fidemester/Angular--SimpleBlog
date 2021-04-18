@@ -1,4 +1,4 @@
-import {Component, Input, OnInit, Output} from '@angular/core';
+import {Component, OnInit, Output} from '@angular/core';
 import {CommentsService} from "../comments.service";
 import {IComment} from "../comment.inerface";
 import {ActivatedRoute} from "@angular/router";
@@ -33,5 +33,5 @@ export class CommentContainerComponent implements OnInit {
   }
 }
 /*
-GET /posts?_sort=views&_order=asc
-  GET /posts?_sort=id&_order=asc  */
+GET /posts-data?_sort=views&_order=asc
+  GET /posts-data?_sort=id&_order=asc  */

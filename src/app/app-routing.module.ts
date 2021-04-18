@@ -1,13 +1,10 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import {PostsComponent} from "../postsv3/posts/posts.component";
-import {PostItemComponent} from "../postsv3/post-item/post-item.component";
+import {PostsComponent} from "./posts-data/posts/posts.component";
 import {RouterModule} from "@angular/router";
-import {PostDetailComponent} from "../post-detail/post-detail.component";
-import {AppComponent} from "../app.component";
-import {PostsService} from "../posts.service";
-import {NotFoundComponent} from "../not-found/not-found.component";
-import {ContactComponent} from "../contact/contact.component";
+import {PostDetailComponent} from "./posts-data/post-detail/post-detail.component";
+import {NotFoundComponent} from "./not-found/not-found.component";
+import {ContactComponent} from "./contact/contact.component";
 
 
 
@@ -28,3 +25,4 @@ const routes=[
 })
 export class AppRoutingModule {
 }
+

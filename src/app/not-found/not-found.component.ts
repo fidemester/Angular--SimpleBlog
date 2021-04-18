@@ -6,9 +6,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./not-found.component.css']
 })
 export class NotFoundComponent implements OnInit {
+  link="http://www.localhost:4200"
 
   constructor() { }
-link="http://www.localhost:4200"
+
   ngOnInit(): void {
   }
 
