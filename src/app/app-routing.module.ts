@@ -4,7 +4,7 @@ import {PostsComponent} from "./posts-data/posts/posts.component";
 import {RouterModule} from "@angular/router";
 import {PostDetailComponent} from "./posts-data/post-detail/post-detail.component";
 import {NotFoundComponent} from "./not-found/not-found.component";
-import {ContactComponent} from "./contact/contact.component";
+import {ContactComponent} from "./features/contact/contact.component";
 
 
 

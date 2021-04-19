@@ -12,14 +12,7 @@ export class PostDetailComponent implements OnInit {
   constructor(
      private postService: PostsService, // PostsService -> postService (Nagybetüvel csak Class-ok, Interface-ek kapnak -konvenció...)
      private route: ActivatedRoute
-  ) {
-
-    // const id: Observable<string> = route.params.pipe(map(p => p.id));
-    // const url: Observable<string> = route.url.pipe(map(segments => segments.join('')));
-
-  }
-
-
+  ){}
   post: any = []; // nem sikerül jól megcsnálni @todo any helyett készíts neki interface-t, getPost(id) csak egy Post típusu elemet tölt le nem tömböt -> típus korrekció szüks, kezdeti érték pedig undefined
   postId:number | undefined;
   ngOnInit(): void {

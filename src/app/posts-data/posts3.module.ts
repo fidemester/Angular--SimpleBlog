@@ -7,9 +7,10 @@ import {PostsService} from "./posts.service";
 import {HttpClientModule} from "@angular/common/http";
 import {NotFoundComponent} from "../not-found/not-found.component";
 import {RouterModule} from "@angular/router";
-import {ContactComponent} from "../contact/contact.component";
+import {ContactComponent} from "../features/contact/contact.component";
 import {FormsModule} from "@angular/forms";
 import {CommentModule} from "../comment/comment.module";
+import {FontAwesomeModule} from "@fortawesome/angular-fontawesome";
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import {CommentModule} from "../comment/comment.module";
         HttpClientModule,
         RouterModule,
       FormsModule,
-      CommentModule
+      CommentModule,
+      FontAwesomeModule
     ],
   exports:[
     PostsComponent

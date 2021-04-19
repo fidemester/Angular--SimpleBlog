@@ -4,7 +4,7 @@ import {PostsComponent} from "./posts/posts.component";
 import {RouterModule} from "@angular/router";
 import {PostDetailComponent} from "./post-detail/post-detail.component";
 import {NotFoundComponent} from "../not-found/not-found.component";
-import {ContactComponent} from "../contact/contact.component";
+import {ContactComponent} from "../features/contact/contact.component";
 
 const routes=[
   {path:"", component:PostsComponent},

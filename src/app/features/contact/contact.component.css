@@ -1,0 +1,44 @@
+*{
+  font-size: 30px;
+}
+header, main h1{
+  padding: 40px;
+}
+header{
+  font-size: 60px;
+  border:1px solid black  ;
+  margin:0 60px;
+  text-align: center;
+}
+main h1 {
+  font-size: 40px;
+}
+main input{
+  margin-left:20px
+}
+input.ng-invalid.ng-touched{
+  border: 2px solid red;
+}
+textarea.ng-invalid.ng-touched{
+  border: 2px solid red;
+}
+#submit{
+  display: inline-block;
+  margin-left: 250px;
+  font-size: 30px;
+}
+#submit:hover{
+background-color: aliceblue;
+  color:black;
+  cursor: pointer;
+  transition: background-color 200ms ease-in-out
+}
+ #emailField, #nameField{
+  margin:20px
+}
+
+ div label a:hover{
+   color: black;
+   background-color:aliceblue;
+   transition: color 300ms ease-in-out
+ }

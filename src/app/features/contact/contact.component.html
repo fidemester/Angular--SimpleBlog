@@ -1,0 +1,63 @@
+<header>
+  Contact Us
+  <fa-icon style="color: chocolate" [icon]="faCoffee"></fa-icon>
+</header>
+
+<main>
+  <h1>We are keen to hear from you!</h1>
+  <div style="margin-left: 60px; padding:30px">
+    <form style="display:inline;position: relative" #contactForm="ngForm" (submit)="onSubmit(contactForm)">
+
+      <label for="nameField">Name:</label>
+      <input style="margin-left: 40px" type="text" #nameField="ngModel"
+             name="nameField" id="nameField" autofocus minlength="6" ngModel required placeholder="Type your name..."><br><br>
+      <ng-template #greenPipeforName>
+        <fa-icon class="ok" style="color: green; position: absolute; top:2px;right: -55%" [icon]="faCheck"></fa-icon>
+      </ng-template>
+
+
+      <div *ngIf="nameField.invalid && nameField.touched; then error"></div>
+      <div *ngIf="nameField.valid && nameField.dirty; then greenPipeforName"></div>
+
+      <ng-template #error>
+        <div class="error">
+          <p style="font-size: 20px; margin-left: 10%; color: red">Something wrong!!</p>
+        </div>
+      </ng-template>
+
+      <label for="emailField">Email:</label>
+      <input style="margin-left: 45px" type="text" #emailField="ngModel" name="emailField" id="emailField" minlength="5"
+             ngModel required>
+      <ng-template #greenPipeforEmail>
+        <fa-icon class="ok" style="color: green; position: absolute; margin-top: 20px; margin-left:16px"
+                 [icon]="faCheck"></fa-icon>
+      </ng-template>
+
+      <div *ngIf="emailField.invalid && emailField.touched; then error"></div>
+      <div *ngIf="emailField.valid && emailField.dirty; then greenPipeforEmail"></div>
+      <br><br>
+
+      <div style="display:flex; align-items: center">
+        <label style="font-size: 30px" for="messageField">Message:</label>
+        <textarea style="padding: 20px; margin-bottom: 10px" name="messageField" #messageField="ngModel" id="messageField" minlength="20" cols="20" rows="5"
+                  ngModel required></textarea>
+        <ng-template #greenPipeforMessage>
+          <fa-icon class="ok" style="color: green; position: absolute;bottom:38%;right:-55%" [icon]="faCheck"></fa-icon>
+        </ng-template>
+      </div>
+        <div *ngIf="messageField.invalid && messageField.touched; then error"></div>
+        <div *ngIf="messageField.valid && messageField.dirty; then greenPipeforMessage"></div>
+        <br><br>
+
+
+      <div style="padding: 20px">
+        <input style="width:20px; height: 20px" type="checkbox" name="check" #checkbox id="term" [ngModel]="false"
+               required>
+        <label for="term"> <a href="#">I read and accept the Terms & Conditions</a> </label><br>
+      </div>
+      <div *ngIf="!checkbox.checked && contactForm.submitted; then error ">
+      </div>
+      <input type="submit" id="submit" name="submit">
+    </form>
+  </div>
+</main>
