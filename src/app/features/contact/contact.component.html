@@ -57,7 +57,7 @@
       </div>
       <div *ngIf="!checkbox.checked && contactForm.submitted; then error ">
       </div>
-      <input type="submit" id="submit" name="submit">
+      <input type="submit" [disabled]="contactForm.invalid" id="submit" name="submit">
     </form>
   </div>
 </main>
