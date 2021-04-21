@@ -22,7 +22,7 @@ export class ContactComponent implements OnInit {
   }
 
   onSubmit(form:NgForm):void{
-    console.log("Values",form, form.value)
+    console.log("Values", form.value)
 
   }
 }

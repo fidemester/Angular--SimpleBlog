@@ -5,7 +5,7 @@ import { Pipe, PipeTransform } from '@angular/core';
 })
 export class TrucatePipe implements PipeTransform {
 
-  transform(value: any, number:number): any {
+  transform(value: string, number:number): any {
     if (value.length>number){
       return value.substring(0,number)+"...";}
     else{
