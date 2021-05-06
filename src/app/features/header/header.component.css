@@ -1,7 +1,9 @@
-:root {
+:root{
   --div-background-color: red
 }
-.fontS{
-color: var(--div-background-color);
+
+
+.fonts{
+  color: var(--div-background-color);
 
 }

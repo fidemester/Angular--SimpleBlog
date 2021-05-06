@@ -1,5 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {PostsService} from "../posts.service";
+import {Post} from "../../app.component";
+import {Ipost} from "../ipost";
 
 @Component({
   selector: 'app-posts',
@@ -7,19 +9,19 @@ import {PostsService} from "../posts.service";
   styleUrls: ['./posts.component.css']
 })
 export class PostsComponent implements OnInit {
-posts:any;
+posts:any = [];
 
-constructor(private PostService: PostsService) {
+constructor(private postServices: PostsService) {
 }
   ngOnInit(): void {
-  //this.PostService.getPosts(this.postsFromApp);
+  //this.postServices.getPosts(this.postsFromApp);
 
-  this.PostService.getPosts(10).subscribe(post =>{
+  this.postServices.getPosts(10).subscribe(post =>{
     console.log(post);
     this.posts=post
 
   })
-    this.PostService.getPost(1).subscribe(post =>{
+    this.postServices.getPost(1).subscribe(post =>{
       console.log(post)
     })
   }

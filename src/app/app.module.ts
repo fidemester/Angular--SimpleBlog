@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './features/header/header.component';
-import {Posts3Module} from "./posts-data/posts3.module";
+import {Posts3Module} from "./posts-data/post.module";
 import {AppRoutingModule} from "./app-routing.module";
 import {RouterModule} from "@angular/router";
 import { PostDetailComponent } from './posts-data/post-detail/post-detail.component';

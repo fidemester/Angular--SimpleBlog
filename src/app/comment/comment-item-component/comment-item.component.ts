@@ -7,11 +7,11 @@ import {Component, Input, OnInit} from '@angular/core';
 })
 export class CommentItemComponent implements OnInit {
   @Input()
-  item:any=[];
+  item: any = [];
   constructor() { }
 
   ngOnInit(): void {
-    console.log('comment item', this.item)
+    console.log('comment item', this.item);
   }
 
 }

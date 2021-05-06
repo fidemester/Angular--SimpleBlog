@@ -42,7 +42,6 @@
         <textarea style="padding: 20px; margin-bottom: 10px" name="messageField" #messageField="ngModel" id="messageField" minlength="20" cols="20" rows="5"
                   ngModel required></textarea>
         <ng-template #greenPipeforMessage>
-          <fa-icon class="ok" style="color: green; position: absolute;bottom:43%;right:-59%" [icon]="faCheck"></fa-icon>
         </ng-template>
       </div>
         <div *ngIf="messageField.invalid && messageField.touched; then error"></div>
