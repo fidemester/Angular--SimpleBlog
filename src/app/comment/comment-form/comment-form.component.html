@@ -1,0 +1,27 @@
+
+<form [formGroup]="myForm" (submit)="onSubmit()">
+<div class="flexbox-container">
+  <div>
+    <label for="firstNameField">First Name:</label>
+    <input type="text" id="firstNameField" formControlName="firstName">
+  </div>
+
+  <div id="lastName">
+    <label for="lastNameField">Last Name:</label>
+    <input type="text"
+    id="lastNameField"
+    formControlName="lastName">
+  </div>
+  <div>
+    <label for="emailField">Email:</label>
+    <input type="text" id="emailField" formControlName="email">
+  </div>
+</div>
+  <div style="display: flex; align-items: center; padding: 20px">
+    <label for="comment">Comment:</label>
+    <textarea name="textarea"  cols="60" rows="10" id="comment" formControlName="body"></textarea>
+    <input type="submit" name="button" id="submit" [disabled]="myForm.invalid">
+
+  </div>
+</form>
+<!--<app-comment [postId]="postId"></app-comment>-->

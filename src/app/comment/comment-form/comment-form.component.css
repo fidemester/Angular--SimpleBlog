@@ -1,0 +1,21 @@
+*{
+  font-size: 30px;
+}
+input{
+  height:30px;
+  width:300px;
+  margin-left: 20px;
+}
+
+.flexbox-container{
+  display: flex;
+  justify-content:flex-start;
+  align-items: center;
+}
+.flexbox-container div{
+  padding:20px
+}
+#submit{
+  padding:15px 0 40px 0;
+  width: 150px;
+}

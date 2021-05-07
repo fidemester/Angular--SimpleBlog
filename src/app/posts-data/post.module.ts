@@ -11,6 +11,7 @@ import {ContactComponent} from '../features/contact/contact.component';
 import {FormsModule} from '@angular/forms';
 import {CommentModule} from '../comment/comment.module';
 import {FontAwesomeModule} from '@fortawesome/angular-fontawesome';
+import {ContactModule} from '../features/contact/contact.module';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,6 @@ import {FontAwesomeModule} from '@fortawesome/angular-fontawesome';
     PostItemComponent,
     TrucatePipe,
     NotFoundComponent,
-    ContactComponent,
 
   ],
   imports: [
@@ -27,7 +27,8 @@ import {FontAwesomeModule} from '@fortawesome/angular-fontawesome';
     RouterModule,
     FormsModule,
     CommentModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    ContactModule
   ],
   exports: [
     PostsComponent

@@ -1,0 +1,12 @@
+
+<h1 style="font-size: 60px;padding:30px;margin: 40px">Add comment share your thoughts!</h1>
+
+<ng-template>
+<div>
+  <h1 style="text-align: center;border: 2px solid red; color:red">Something wrong</h1>
+</div>
+</ng-template>
+<div *ngIf="comment?.comment?.length>0" style="border:2px solid green"><!-- @todo-->
+  <h1  style="text-align: center; color:green">Success</h1>
+</div>
+<app-comment-form (commentsData)="handleOutput($event)"> </app-comment-form>

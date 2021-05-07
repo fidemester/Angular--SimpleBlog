@@ -42,3 +42,7 @@ background-color: aliceblue;
    background-color:aliceblue;
    transition: color 300ms ease-in-out
  }
+
+ .false{
+   display: none;
+ }

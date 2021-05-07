@@ -50,6 +50,43 @@
       "body": "quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto"
     }
   ],
+  "ContactFormMessage": [
+    {
+      "nameField": "Fodor Krisztián",
+      "emailField": "fodorkrisztian6@gmail.com",
+      "messageField": "http://localhost:3000/ContactFormMessage",
+      "check": true,
+      "id": 1
+    },
+    {
+      "nameField": "asdsads",
+      "emailField": "sadsadsd",
+      "messageField": "http://localhost:3000/ContactFormMessage",
+      "check": true,
+      "id": 2
+    },
+    {
+      "nameField": "asdsadsdsa",
+      "emailField": "asdsadsadsad",
+      "messageField": "sadsadsadasdassdasdasdsadsadasdsad",
+      "check": true,
+      "id": 3
+    },
+    {
+      "nameField": "Fodor Krisztián",
+      "emailField": "fodorkrisztian6@gmail.com",
+      "messageField": "</ng-template>asasaaaa",
+      "check": true,
+      "id": 4
+    },
+    {
+      "nameField": "Fodor Krisztián",
+      "emailField": "fodorkrisztian6@gmail.com",
+      "messageField": "</ng-template>asasasasassasaas",
+      "check": true,
+      "id": 5
+    }
+  ],
   "comments": [
     {
       "postId": 1,
