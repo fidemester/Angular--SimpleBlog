@@ -8,13 +8,13 @@ import {Ipost} from './ipost';
 })
 export class PostsService { // a service fajl kerüljön a "posts-data" modul mappába!
 
-  static API_URL = 'http://localhost:3000/posts';
+  static API_URL = 'http://localhost:4440/posts';
 
   constructor(private http: HttpClient) {
   }
 
-  getPosts(limit: number): Observable<Ipost> { // rename to Post or  IPost
-    return this.http.get<Ipost>(PostsService.API_URL, {params: new HttpParams({fromString: '_page=1&_limit=' + limit})}); // fromString kérdéses számomra, müxik így?
+  getPosts(limit: number): Observable<Ipost[]> { // rename to Post or  IPost
+    return this.http.get<Ipost[]>(PostsService.API_URL, {params: new HttpParams({fromString: '_page=1&_limit=' + limit})}); // fromString kérdéses számomra, müxik így?
   }
 
   getPost(id: number) {

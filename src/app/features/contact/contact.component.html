@@ -3,8 +3,8 @@
   <fa-icon style="color: chocolate" [icon]="faCoffee"></fa-icon>
 </header>
 
-<h1>We are keen to hear from you!</h1>
 <main>
+  <h1>We are keen to hear from you!</h1>
   <div [class.false]="contactForm.submitted" style="margin-left: 60px; padding:30px" >
     <form  style="display:inline;position: relative" #contactForm="ngForm" (submit)="onSubmit(contactForm)">
 
@@ -12,7 +12,7 @@
       <input style="margin-left: 40px" type="text" #nameField="ngModel"
              name="nameField" id="nameField" autofocus minlength="6" ngModel required placeholder="Type your name..."><br><br>
       <ng-template #greenPipeforName>
-        <fa-icon class="ok" style="color: green; position: absolute; top:2px;right: -55%" [icon]="faCheck"></fa-icon>
+        <fa-icon class="ok" style="color: green; position: absolute; top:2px;right: -61%" [icon]="faCheck"></fa-icon>
       </ng-template>
 
 
@@ -42,7 +42,7 @@
         <textarea style="padding: 20px; margin-bottom: 10px" name="messageField" #messageField="ngModel" id="messageField" minlength="20" cols="20" rows="5"
                   ngModel required></textarea>
         <ng-template #greenPipeforMessage>
-          <fa-icon class="ok" style="color: green; position: absolute; margin-top: 5px; margin-left:16px"
+          <fa-icon class="ok" style="color: green; position: absolute; margin-left: 154%; margin-top: -40%"
                    [icon]="faCheck"></fa-icon>
         </ng-template>
       </div>

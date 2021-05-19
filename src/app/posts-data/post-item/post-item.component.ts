@@ -12,7 +12,7 @@ data: Post | any;
   constructor() { }
 
   ngOnInit(): void {
-    console.log(this.data)
+    console.log(this.data);
   }
 
 }

@@ -1,9 +1,0 @@
-:root{
-  --div-background-color: red
-}
-
-
-.fonts{
-  color: var(--div-background-color);
-
-}

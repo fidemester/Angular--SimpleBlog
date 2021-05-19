@@ -46,6 +46,7 @@ export class CommentFormComponent implements OnInit {
   ngOnInit(): void {
     console.log('comment-fom-comp', this.postId);
   }
+
   onSubmit(): void {
     console.log('myForm' , this.myForm.value);
     this.commentsData.emit(this.myForm.value);

@@ -1,6 +1,6 @@
 <p class="title">{{data.title| titlecase}}</p>
 <img src="{{data.postImg}}" alt="hupsz">
-<p>{{data.body | trucate:100}}</p>
+<p style="text-align: justify">{{data.body | trucate:100 | titlecase}}</p>
 <p>
  <button><a href="post/{{data.id}}">Read more</a> </button>
 </p>

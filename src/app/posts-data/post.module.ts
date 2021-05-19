@@ -12,6 +12,7 @@ import {FormsModule} from '@angular/forms';
 import {CommentModule} from '../comment/comment.module';
 import {FontAwesomeModule} from '@fortawesome/angular-fontawesome';
 import {ContactModule} from '../features/contact/contact.module';
+import {PostResolver} from './post.resolver';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,7 @@ import {ContactModule} from '../features/contact/contact.module';
     PostsComponent
   ],
   providers: [
-    PostsService
+    PostsService, PostResolver
   ]
 })
 export class Posts3Module {

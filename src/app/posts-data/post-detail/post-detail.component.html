@@ -1,6 +1,9 @@
 <header>
   <h1>{{post.title | titlecase}}</h1>
-  <a routerLink="/" id="link">All posts</a>
+  <div>
+    <a routerLink="/" class="link">All posts <mat-icon class="link" aria-hidden="false" aria-label="Example home icon">home</mat-icon></a>
+  </div>
+
 </header>
 <main>
   <h1>{{post.body | titlecase}}</h1>

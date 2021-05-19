@@ -85,6 +85,27 @@
       "messageField": "</ng-template>asasasasassasaas",
       "check": true,
       "id": 5
+    },
+    {
+      "nameField": "Fodor Krisztián",
+      "emailField": "fodorkrisztian6@gmail.com",
+      "messageField": "asprivate router: ActivatedRoute",
+      "check": true,
+      "id": 6
+    },
+    {
+      "nameField": "Fodor Krisztián",
+      "emailField": "fodorkrisztian6@gmail.com",
+      "messageField": "<div [class.false]=\"contactForm.submitted\"",
+      "check": true,
+      "id": 7
+    },
+    {
+      "nameField": "Fodor Krisztián",
+      "emailField": "fodorkrisztian6@gmail.com",
+      "messageField": "Hétfő: nyelvtan,áhitat,matematika, angol. \nKedd : angol,környezet, történelem\nSzerda : irodalom,matematika\nCsütörtök:angol,hittan\nPéntek: angol, vizuális kultúra, matematika",
+      "check": true,
+      "id": 8
     }
   ],
   "comments": [
@@ -213,6 +234,13 @@
       "postId": "1",
       "email": "todibodi@gmail.das",
       "id": 19
+    },
+    {
+      "name": "Luca Jónási",
+      "body": "Hello-bello",
+      "postId": "5",
+      "email": "jonasiLu@gmail.com",
+      "id": 20
     }
   ]
 }

@@ -1,5 +1,5 @@
 
-<form [formGroup]="myForm" (submit)="onSubmit()">
+<form [formGroup]="myForm" #myForm1 (submit)="onSubmit()">
 <div class="flexbox-container">
   <div>
     <label for="firstNameField">First Name:</label>
@@ -20,8 +20,10 @@
   <div style="display: flex; align-items: center; padding: 20px">
     <label for="comment">Comment:</label>
     <textarea name="textarea"  cols="60" rows="10" id="comment" formControlName="body"></textarea>
-    <input type="submit" name="button" id="submit" [disabled]="myForm.invalid">
-
+    <input type="submit" name="button"  id="submit" [disabled]="myForm.invalid">
   </div>
 </form>
+<div *ngIf="myForm.valid ">
+  <h1>Hello word</h1>
+</div>
 <!--<app-comment [postId]="postId"></app-comment>-->
